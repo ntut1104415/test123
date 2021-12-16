@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import cv2
+import streamlit as st
+st.write('我們的組名: 隨便啦 先孤輪')
 import numpy as np 
 
 
