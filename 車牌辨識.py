@@ -8,15 +8,15 @@ img = cv2.imread("car2.jpg")
 # cv2.imshow("input",img)
 
 # 高斯模糊
-blur = cv2.GaussianBlur(img,(5,5),0)
+blur = st.GaussianBlur(img,(5,5),0)
 # cv2.imshow("gaussinan",blur)
 
 # 灰階
-gray_img = cv2.cvtColor(blur,cv2.COLOR_BGR2GRAY)
+gray_img = st.cvtColor(blur,cv2.COLOR_BGR2GRAY)
 
 # 邊緣檢測
-sobel_x = cv2.Sobel(gray_img,cv2.CV_16S,1,0)
-sobel_y = cv2.Sobel(gray_img,cv2.CV_16S,0,1)
+sobel_x = st.Sobel(gray_img,cv2.CV_16S,1,0)
+sobel_y = st.Sobel(gray_img,cv2.CV_16S,0,1)
 
 # in the case of 8-bit input images it will result in truncated derivatives.
 # 官方說明 CV_8U 計算完會有一部分被截去 所以使用 CV_16S
