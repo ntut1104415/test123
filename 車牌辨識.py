@@ -1,7 +1,19 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
 st.write('我們的組名: 隨便啦 先孤輪')
+ 
+import cv2
 import numpy as np 
+import os
+import shutil
+from datetime import datetime
+import numpy as np
+import pandas as pd
+import tarfile
+from io import BytesIO
+from base64 import b64encode
+from github import Github
+from IPython.display import Markdown, display
 
 
 img = cv2.imread("car2.jpg")
