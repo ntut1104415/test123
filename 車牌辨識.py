@@ -3,13 +3,13 @@ import streamlit as st
 st.write('我們的組名: 隨便啦 先孤輪')
  
 import cv2
-import numpy as np 
 import os
 import shutil
 from datetime import datetime
-import numpy as np
 from ulti import *
 import threading
+import numpy as np 
+
 
 Image = st.file_uploader('Upload your portrait here',type=['jpg','jpeg','png'])
         if Image is not None:
