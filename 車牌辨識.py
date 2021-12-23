@@ -8,7 +8,9 @@ import os
 import shutil
 from datetime import datetime
 import numpy as np
-   
+from ulti import *
+import threading
+
 Image = st.file_uploader('Upload your portrait here',type=['jpg','jpeg','png'])
         if Image is not None:
             col1, col2 = st.beta_columns(2)
