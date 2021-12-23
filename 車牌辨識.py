@@ -16,8 +16,9 @@ from github import Github
 from IPython.display import Markdown, display
 
 
+
 img = cv2.imread("car2.jpg")
-# cv2.imshow("input",img)
+cv2.imshow("input",img)
 
 # 高斯模糊
 blur = st.GaussianBlur(img,(5,5),0)
